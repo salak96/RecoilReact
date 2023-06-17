@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useSetRecoilState } from 'recoil';
-import { animalFilterState } from '../atoms';
+import { animalFilterState } from '../Recoil/atoms';
 
 export default function pickAnimals() {
     const setAninamlFilter = useSetRecoilState(animalFilterState);

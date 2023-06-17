@@ -1,7 +1,7 @@
 import { useRecoilValue } from 'recoil';
 import dog from '../assets/dog.avif';
 import cat from '../assets/cat.avif';
-import { filteredAnimals } from '../selector';
+import { filteredAnimals } from '../Recoil/selector';
 
 export default function Animals() {
     const animals = useRecoilValue(filteredAnimals);

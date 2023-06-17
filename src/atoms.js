@@ -20,3 +20,8 @@ export const animalsState = atom({
         },
     ],
 });
+
+export const animalFilterState = atom({
+    key: 'animalFilterState',
+    default: 'all',
+});

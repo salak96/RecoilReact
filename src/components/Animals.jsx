@@ -20,27 +20,15 @@ export default function Animals() {
     };
 
     return (
-        <div>
-            <h1>Animals:</h1>
+        <div className='flex flex-col justify-center align-items-center  mx-auto p-4 bg-gray-200'>
+            <h1 className='text-3xl'>Animals:</h1>
             {animals.map((animal) => (
-                <div key={animal.id} style={styles.animal}>
+                <div key={animal.id} className='flex flex-col justify-center align-items-center  mx-auto p-4 bg-gray-200'>
                     {animal.name} is {animal.type}
-                    <img src={getIcon(animal.type)} style={styles.icon} alt={animal.type} />
+                    <img className='w-20' src={getIcon(animal.type)} alt={animal.name} />
                 </div>
             ))}
         </div>
     );
 }
 
-const styles = {
-    animal: {
-        display: 'flex',
-        alignItems: 'center',
-        margin: '12px 0',
-        fontSize: '20px',
-    },
-    icon: {
-        height: '40px',
-        marginLeft: '12px',
-    },
-};

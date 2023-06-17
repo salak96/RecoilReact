@@ -8,7 +8,6 @@ export default function Animals() {
     // console.log(animals);
     // Memperbarui const animals = useRecoilValue(animalsState) menjadi const animals = useRecoilValue(filteredAnimals)
 
-
     const getIcon = (animalType) => {
         switch (animalType) {
             case 'dog':
